@@ -12,5 +12,10 @@ namespace TestMainDemo263
         {
             return first + second;
         }
+
+        public int Substraction(int first, int second)
+        {
+            return first - second;
+        }
     }
 }
