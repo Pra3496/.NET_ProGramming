@@ -6,26 +6,24 @@ namespace TestMainDemo263
     {
         static void Main(string[] args)
         {
-            int fir = 0;
-            int sec = 0;
+            Console.WriteLine("Enter The Number :");
+            
+            int no = Convert.ToInt32(Console.ReadLine());
+            int i = 0;
+            Console.WriteLine("Using For Loop");
 
-            Console.WriteLine("Calculator Class -> Addition");
-            Calculator cal = new Calculator();
+            for (i=0;i<no;i++)
+            {
+                Console.WriteLine(i);
+            }
 
-            Console.WriteLine("Enter the First Number :");
-            fir = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Enter the Second Number :");
-            sec = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Sum of {0} and {1} is {2}", fir, sec, cal.Addition(fir, sec));
-
-            Console.WriteLine("Enter the User Name :");
-            String userName = Console.ReadLine();
-            Console.WriteLine("Enter the Batch Name :");
-            String Batch = Console.ReadLine();
-
-            Console.WriteLine("Hello,{0}\n\tBatch Name is {1}", userName, Batch);
+            Console.WriteLine("Using While Loop");
+            i = 0;
+            while(i != no)
+            {
+                Console.WriteLine(i);
+                i++;
+            }    
 
         }
     }
